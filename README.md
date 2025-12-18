@@ -70,7 +70,7 @@ Impact Pulse/
 └── README.md
 ```
 
-## 🚀 Local Development
+<!-- ## 🚀 Local Development
 
 ### Prerequisites
 - Node.js 18+
@@ -330,4 +330,4 @@ MIT License - free to use for social impact projects!
 
 Built with ❤️ for social impact organizations
 
-**Tech Stack:** React • Node.js • Express.js • MongoDB Atlas • Vercel • Netlify • Render
+**Tech Stack:** React • Node.js • Express.js • MongoDB Atlas • Vercel • Netlify • Render -->
