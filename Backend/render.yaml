@@ -1,0 +1,28 @@
+# Render Blueprint for Impact Pulse Backend
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: impact-pulse-api
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false  # Set manually in Render dashboard
+      - key: JWT_SECRET
+        generateValue: true  # Auto-generate secure secret
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: CLIENT_URL
+        sync: false  # Set to your Vercel/Netlify URL
+    autoDeploy: true
+
+

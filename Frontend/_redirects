@@ -1,0 +1,8 @@
+# Netlify _redirects file (alternative to netlify.toml)
+# Redirect API calls to backend
+/api/*  https://your-backend-url.onrender.com/api/:splat  200
+
+# SPA fallback
+/*  /index.html  200
+
+
